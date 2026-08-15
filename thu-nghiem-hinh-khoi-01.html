@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thử nghiệm hình khối 01 — TÊN CỦA BẠN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#181022;--ink-soft:#5b5368;--paper:#fff;--paper-2:#f7f5fb;
+  --lime:#d7ff3a;--magenta:#ff2e88;--line:#e7e3f0
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:auto;padding:0 28px}
+.mono{font-family:'JetBrains Mono',monospace}
+
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Archivo Black',sans-serif;font-size:17px;display:flex;gap:8px;align-items:center}
+.logo-dot{width:9px;height:9px;background:var(--magenta);border-radius:50%}
+.back-link{font:12px 'JetBrains Mono',monospace;color:var(--ink-soft);display:inline-flex;align-items:center;gap:6px}
+.back-link:hover{color:var(--ink)}
+
+.project-hero{padding:60px 0 40px}
+.eyebrow{font:11px 'JetBrains Mono',monospace;letter-spacing:.1em;color:#81788e;text-transform:uppercase;margin-bottom:16px}
+.project-hero h1{font-family:'Archivo Black',sans-serif;font-size:clamp(38px,6vw,64px);line-height:1;letter-spacing:-.04em;margin-bottom:20px}
+.project-meta{display:flex;gap:20px;flex-wrap:wrap;font:11px 'JetBrains Mono',monospace;color:#81788e;padding-bottom:32px;border-bottom:1px solid var(--line)}
+
+.cover{margin:40px 0;border-radius:20px;overflow:hidden;height:420px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#d7ff3a,#a4f0d6)}
+.cover-shape{width:35%;height:35%;background:var(--ink);border-radius:50%}
+
+.project-body{max-width:720px;padding:20px 0 90px}
+.project-body h2{font-family:'Archivo Black',sans-serif;font-size:26px;margin:36px 0 14px;letter-spacing:-.02em}
+.project-body p{font-size:16px;color:var(--ink-soft);margin-bottom:16px}
+.placeholder-note{background:var(--paper-2);border:1px dashed var(--line);border-radius:14px;padding:20px 22px;font-size:13px;color:var(--ink-soft);margin:28px 0}
+.placeholder-note strong{color:var(--ink)}
+
+footer{border-top:1px solid var(--line);padding:28px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font:11px 'JetBrains Mono',monospace;color:#81788e}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="wrap">
+  <a class="logo" href="index.html"><span class="logo-dot"></span>TÊN CỦA BẠN</a>
+  <a class="back-link" href="index.html#works">← quay lại tác phẩm</a>
+</nav>
+</header>
+
+<main>
+<section class="project-hero">
+<div class="wrap">
+  <div class="eyebrow">// sở thích · digital</div>
+  <h1>Thử nghiệm hình khối 01</h1>
+  <div class="project-meta">
+    <span>1080×1080</span>
+    <span>digital</span>
+    <span>2026</span>
+  </div>
+</div>
+</section>
+
+<div class="wrap">
+  <div class="cover"><div class="cover-shape"></div></div>
+</div>
+
+<section class="project-body wrap">
+  <h2>Về tác phẩm này</h2>
+  <p>[Mô tả ngắn về ý tưởng và bối cảnh của thử nghiệm này — bạn có thể thay đoạn này bằng nội dung thật khi sẵn sàng.]</p>
+
+  <h2>Quá trình thực hiện</h2>
+  <p>[Ghi chú về công cụ, kỹ thuật hoặc hướng tiếp cận bạn đã dùng cho hình khối này.]</p>
+
+  <div class="placeholder-note">
+    <strong>Placeholder:</strong> Đây là trang mẫu cho một tác phẩm cụ thể. Ảnh minh họa phía trên hiện chỉ là hình khối đơn giản — bạn có thể thay bằng ảnh thật, và thêm bao nhiêu đoạn mô tả tùy ý.
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 TÊN CỦA BẠN</span>
+  <a class="back-link" href="index.html">← Về trang chủ</a>
+</footer>
+
+</body>
+</html>
